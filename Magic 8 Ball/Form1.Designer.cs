@@ -29,6 +29,7 @@ namespace Magic_8_Ball
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magicBall));
             this.questionLabel = new System.Windows.Forms.Label();
             this.outputLabel = new System.Windows.Forms.Label();
             this.clickButton = new System.Windows.Forms.Button();
@@ -79,6 +80,7 @@ namespace Magic_8_Ball
             this.Controls.Add(this.clickButton);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.questionLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "magicBall";
             this.Text = "Magic 8 Ball";
             this.ResumeLayout(false);
